@@ -1,0 +1,153 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar button:hover,
+.sidebar .active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-panel {
+  flex: 1;
+  position: relative;
+  padding: 40px;
+}
+
+.account-box.top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.account-box.top-left img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 300px;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab-bar button {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-bar button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.play-section {
+  text-align: center;
+}
+
+.play-button {
+  padding: 16px 32px;
+  font-size: 1.2em;
+  background-color: #00c853;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00c853;
+  transition: transform 0.2s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.05);
+}
+
+.version-label {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+#versions-menu {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1em;
+  display: none;
+  z-index: 10;
+  animation: fadeIn 0.5s ease-out;
+}
+
+#versions-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#versions-menu li {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#versions-menu li:hover {
+  color: #00c853;
+}
+
+.hidden {
+  display: none;
+}

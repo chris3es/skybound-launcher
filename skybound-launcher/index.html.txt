@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skybound Syndicate Launcher</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <button>News</button>
+    <button class="active">Skybound Syndicate</button>
+    <button>Settings</button>
+  </aside>
+
+  <div class="main-panel">
+    <div class="account-box top-left">
+      <img src="assets/avatar.png" alt="User Avatar">
+      <span id="user-name">Guest</span>
+    </div>
+
+    <div class="logo-container">
+      <img src="assets/skybound-logo.png" alt="Skybound Logo">
+    </div>
+
+    <nav class="tab-bar">
+      <button>Play</button>
+      <button>Installations</button>
+      <button>Skins</button>
+      <button>Patch Notes</button>
+      <button id="versions-button">Versions</button>
+    </nav>
+
+    <div class="play-section">
+      <button class="play-button">LAUNCH</button>
+      <p class="version-label">Latest release (1.0.0)</p>
+    </div>
+
+    <div id="versions-menu" class="hidden">
+      <ul>
+        <li data-version="alpha">Alpha 0.1</li>
+        <li data-version="beta">Beta 0.5</li>
+        <li data-version="release">Release 1.0</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="assets/launcher.js"></script>
+</body>
+</html>
