@@ -35,4 +35,5 @@ document.querySelectorAll('#versions-menu li').forEach(item => {
 const savedUser = localStorage.getItem('skyboundUser');
 if (savedUser) {
   document.getElementById('user-name').textContent = savedUser;
+
 }
